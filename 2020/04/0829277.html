@@ -501,7 +501,7 @@
 <p>例如：</p>
 <p>$AgCl\ce{-&gt;}AgI\ce{-&gt;}Ag_2S\ce{-&gt;}加入酸溶解$</p>
 <p>$Mg(OH)_2\ce{-&gt;}Fe(OH)_3\ce{-&gt;}加入酸溶解$</p>
-<p>$水垢CaSO_4\ce{-&gt;}Ca_2CO_3\ce{-&gt;}加入酸溶解$</p>
+<p>$水垢CaSO_4\ce{-&gt;}Ca_2CO_3\ce{-&gt;}加入酸溶解​</p>
 <p><strong>沉淀转换的实质是沉淀溶解平衡的移动</strong></p>
 <h3 id="溶度积"><a href="#溶度积" class="headerlink" title="溶度积"></a>溶度积</h3><p>$k_{sp}=c^m(M^{n+})·c^n(A^{m-})$</p>
 <p>常见溶度积如下</p>
@@ -960,8 +960,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('2'),
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -973,7 +973,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -1033,6 +1033,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
     <footer class="page-footer bg-color">
@@ -1214,6 +1221,25 @@ $(function () {
 
     
 
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "6ab1fc63"
+        });
+        daovoice('update');
+    </script>
     
 
     
